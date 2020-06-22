@@ -4,15 +4,8 @@
   "description": "A template to create a schemaless CQRS service to perform queries in distributed systems using microservices architecture",
   "main": "index.js",
   "directories": {
-    "src": "src",
     "test": "test"
   },
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
     "body-parser": "^1.19.0",
@@ -20,5 +13,25 @@
     "@rafael-juliao/joi-express-middleware": "1.0.0",
     "awilix": "^4.2.5",
     "dotenv": "^8.2.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafael-juliao/cqrs-template.git"
+  },
+  "keywords": [
+    "microservices",
+    "cqrs",
+    "domain",
+    "events"
+  ],
+  "author": "Rafael Juliao Bessega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafael-juliao/cqrs-template/issues"
+  },
+  "homepage": "https://github.com/rafael-juliao/cqrs-template#readme"
 }

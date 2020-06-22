@@ -1,8 +1,8 @@
-const Events = require('../../domain/events/DomainEvents')
+const Events = require('../../domain/replication/DomainEvents')
 
 module.exports = {
-    [Events.OFFER_CREATED]: { channel: 'offer-created' },
-    [Events.OFFER_UPDATED]: { channel: 'offer-update' },
-    [Events.PRODUCT_CREATED]: { channel: 'product-created' },
-    [Events.PRODUCT_UPDATED]: { channel: 'product-update' },
+    [Events.ENTITY_A_CREATED]: { channel: 'entity-a-created' },
+    [Events.ENTITY_A_UPDATED]: { channel: 'entity-a-update' },
+    [Events.ENTITY_B_CREATED]: { channel: 'entity-b-created' },
+    [Events.ENTITY_B_UPDATED]: { channel: 'entity-b-update' },
 }

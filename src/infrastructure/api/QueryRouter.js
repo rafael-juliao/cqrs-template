@@ -11,13 +11,13 @@ const createRouter = routes => {
 
 module.exports = ({ queryController, queryValidator }) => createRouter([
     {
-        path: '/offers/:offerId',
-        validator: queryValidator.getOfferById,
-        controller: queryController.getOfferById,
+        path: '/entityA/:entityId',
+        validator: queryValidator.getEntityAById,
+        controller: queryController.getEntityAById,
     },
     {
-        path: '/offers',
-        validator: queryValidator.searchOffers,
-        controller: queryController.searchOffers,
+        path: '/entityA',
+        validator: queryValidator.searchEntityA,
+        controller: queryController.searchEntityA,
     },
 ])

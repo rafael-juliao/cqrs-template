@@ -6,13 +6,13 @@ module.exports = ({
         disconnect: () => { logger.info('[DATABASE-MOCK] "Disconnected"') },
     })),
     dataPersistence: asValue({
-        saveProduct: () => ({}),
-        updateProduct: () => ({}),
-        saveOffer: () => ({}),
-        updateOffer: () => ({}),
+        createEntityA: () => ({}),
+        updateEntityA: () => ({}),
+        createEntityB: () => ({}),
+        updateEntityB: () => ({}),
     }),
     dataQuery: asValue({
-        getOfferById: () => ({}),
-        searchOffers: () => [],
+        getEntityAById: () => ({}),
+        searchEntityA: () => [],
     }),
 })
