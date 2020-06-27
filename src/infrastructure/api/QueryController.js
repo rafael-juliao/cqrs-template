@@ -4,7 +4,10 @@ module.exports = ({ queryOperations }) => ({
         try {
             const { params : { entityId } } = req
             const result = await queryOperations.getEntityAById({ entityId })
-            res.status(200).json(result).end()
+            if (result)
+                res.status(200).json(result).end()
+            else
+                res.status(404).end()
         } catch (err) {
             next(err)
         }
